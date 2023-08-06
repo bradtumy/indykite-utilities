@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@indykiteone/indykite-sdk-node": "^0.4.0",
+    "express": "^4.17.1"
+  },
+  "name": "@brad.tumy/travlrid-utilities",
+  "version": "1.0.3",
+  "main": "dist/indykite.js",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node dist/indykite.js"
+  },
+  "keywords": [],
+  "author": "Brad Tumy",
+  "license": "ISC",
+  "description": "travlrid utiltities"
+}
