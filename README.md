@@ -1,6 +1,6 @@
-# TravlrId Utilities
+# IndyKite Utilities
 
-A private package that includes middleware functionality used by TravlrId
+A package that includes middleware functionality for use with IndyKite
 
 ## Development
 
@@ -18,6 +18,6 @@ npm publish
 
 ```bash
 
-npm install @brad.tumy/travlrid-utilities
+npm install @brad.tumy/indykite-utilities
 
 ```
