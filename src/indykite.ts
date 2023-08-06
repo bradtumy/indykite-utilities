@@ -1,4 +1,4 @@
-import { IdentityClient } from "@indykiteone/indykite-sdk-node"
+import { IdentityClient, IngestClient, IngestRecord } from "@indykiteone/indykite-sdk-node"
 
 // Create a random number
 function between(min, max) {
@@ -22,6 +22,11 @@ function cleanToken(header) {
 async function ikClient () {
   const indykiteConnection = await IdentityClient.createInstance();
   return indykiteConnection;
+}
+
+async function IndyKite_IngestClient () {
+  const indykite_ingestclient = await IngestClient.createInstance();
+  return indykite_ingestclient;
 }
 
 // Call IndyKite and check if the auth token is still valid
