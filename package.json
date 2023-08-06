@@ -16,6 +16,6 @@
   },
   "keywords": [],
   "author": "Brad Tumy",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "description": "Indykite middleware utiltities"
 }
