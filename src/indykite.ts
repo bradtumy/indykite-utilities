@@ -42,7 +42,9 @@ async function validateToken (authToken) {
 // pull the auth token from the request header and process to make sure that the client is authorized
 export async function isAuthorized (request, response, next) {
   const token = request.headers.authorization;
+  console.log("DEBUG:: Here is the token: ", token);
   const tokenValid = await validateToken(token);
+  console.log("DEBUG:: Token Valid: ", tokenValid);
   if (!tokenValid.active) {
       //console.log("Token Valid: ", tokenValid);
       response.status(400).json({"Session" : tokenValid})
@@ -90,4 +92,22 @@ export async function sendEmailInvite(req,res, next) {
 
   return referenceId;
   next();
+}
+
+export async function createOrganization (request, response, next) {
+  //const token = request.headers.authorization;
+  //const tokenValid = await validateToken(token);
+  const isTrue = true;
+
+  if (!isTrue) {
+      //console.log("Token Valid: ", tokenValid);
+      response.status(400).json({"Session" : "Not True"})
+  } else {
+      //console.log("Token Valid: ", tokenValid);
+      next();
+  }
+}
+
+export async function GetOrganizations(req, response, next) {
+  response.status(200).json({"msg" : "Getting Organizations"})
 }
